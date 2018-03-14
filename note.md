@@ -19,8 +19,8 @@
 - 创建数据库
 
     
-    ```sql:
-      create database [dabasename];
+    ```
+      CREATE DATABASE [DATABASE-NAME];
     ```
     
 - 创建表
