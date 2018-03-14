@@ -19,6 +19,16 @@
 - 创建数据库
 
     
-    ```sql
+    ```sql:
       create database [dabasename];
     ```
+    
+- 创建表
+
+  ```
+    CREATE TABLE USERS(
+      UID smallint(6) NOT NULL AUTO_INCREMENT,
+      NAMEchar(50) NOT NULL,
+      AGE smallint(6) NOT NULL
+    ) 
+  ```
