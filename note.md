@@ -46,7 +46,11 @@
   ``` 
     mysql -uroot -p 
   ```
+  
   - 执行`show databases;`查看数据库  
-  - 创建数据库`create database fsdb;`  
+  
+  - 创建数据库`create database fsdb;`
+  
   - 切换数据库 `use fsdb;`  
+  
   - 执行数据备份脚本 `source d:/fsdb_bak.sql`
