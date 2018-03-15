@@ -4,7 +4,7 @@
 
 - 数据库与表的创建
 
-- 数据添加与删除
+- 数据库的备份与还原
 
 - 简单查询
 
@@ -31,4 +31,12 @@
       NAMEchar(50) NOT NULL,
       AGE smallint(6) NOT NULL
     ) 
-  ```
+  ```
+## 数据库的备份与还原
+
+- 命令方式
+
+```
+  mysqldump -uroot -p [DatabaseName] > bakefile.sql
+  
+```
