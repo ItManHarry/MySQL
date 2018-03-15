@@ -34,9 +34,9 @@
   ```
 ## 数据库的备份与还原
 
-- 命令方式
+- 命令方式在`cmd`下执行
 
 ```
-  mysqldump -uroot -p [DatabaseName] > bakefile.sql
+  mysqldump -uroot -p [DatabaseName] > D:/backfile.sql
   
 ```
