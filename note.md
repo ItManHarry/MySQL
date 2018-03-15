@@ -2,17 +2,31 @@
 
 - MySQL介绍
 
+- 数据类型
+
 - 数据库与表的创建
 
 - 数据库的备份与还原
-
-- 简单查询
 
 ---
 
 ## MySQL介绍
   
 > Mysql是最流行的关系型数据库管理系统，在WEB应用方面MySQL是最好的RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。
+
+## 数据类型
+
+- MySQL中常见的数据类型有:varchar(n),float,int(n),bigint(n),date,datetime,text.
+
+- 默认值:default 'value'.
+
+- 非空:not null.
+
+- 自动增长:auto_increment(使用在int类型数据,一般用于创建key).
+
+- 主键:primary key.
+
+- 列备注:comment 'comment'
 
 ## 数据库与表的创建
 
@@ -27,9 +41,9 @@
 
   ```
     CREATE TABLE USERS(
-      UID smallint(6) NOT NULL AUTO_INCREMENT,
-      NAMEchar(50) NOT NULL,
-      AGE smallint(6) NOT NULL
+      UID smallint(6) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
+      NAME varchar(50) NOT NULL COMMENT 'NAME',
+      AGE smallint(6) NOT NULL COMMENT 'AGE'
     ) 
   ```
 ## 数据库的备份与还原
