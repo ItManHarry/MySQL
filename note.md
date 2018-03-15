@@ -34,9 +34,27 @@
   ```
 ## 数据库的备份与还原
 
-- 命令方式在`cmd`下执行
+- 命令方式在`cmd`下执行备份数据命令(此方式只是备份数据库里的表)
 
 ```
   mysqldump -uroot -p [DatabaseName] > D:/backfile.sql
   
 ```
+- MySQL下还原数据
+
+  - 首先进入MySQL`cmd`下执行:
+ 
+  ```
+ 
+    mysql -uroot -p
+ 
+  ```
+  
+  - 执行`show databases;`查看数据库
+  
+  - 创建数据库`create database fsdb;`
+  
+  - 切换数据库 `use fsdb;`
+  
+  - 执行数据备份脚本 `source d:/fsdb_bak.sql`
+ 
