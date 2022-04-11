@@ -14,6 +14,19 @@
   
 > Mysql是最流行的关系型数据库管理系统，在WEB应用方面MySQL是最好的RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。
 
+## 创建用户
+- 使用root登录MySQL
+```
+  # 仅本地访问的用户
+  create user 'username'@'localhost' identified by 'password';
+  # 可以远程访问的用户
+  create user 'username'@'%' identified by 'password';
+```
+- 授权数据库
+```
+  grant all privileges on database_name.* to user_name;
+```
+
 ## 数据类型
 
 - MySQL中常见的数据类型有:varchar(n),float,int(n),bigint(n),date,datetime,text.
