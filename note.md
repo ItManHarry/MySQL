@@ -26,6 +26,10 @@
 ```
   grant all privileges on database_name.* to user_name;
 ```
+- 撤销授权
+```
+  revoke all privileges on database_name.* from user_name;
+```
 
 ## 数据类型
 
