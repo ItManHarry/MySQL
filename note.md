@@ -21,6 +21,8 @@
   create user 'username'@'localhost' identified by 'password';
   # 可以远程访问的用户
   create user 'username'@'%' identified by 'password';
+  # 删除用户
+  drop user 'username'@'localhost/%'
 ```
 - 授权数据库
 ```
