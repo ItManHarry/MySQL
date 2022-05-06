@@ -22,7 +22,10 @@
   # 可以远程访问的用户
   create user 'username'@'%' identified by 'password';
   # 删除用户
-  drop user 'username'@'localhost/%'
+  drop user 'username'@'localhost/%';
+  # 重置密码
+  use mysql;
+  update user set authentication_string=pasword('new password') where user = 'user name';
 ```
 - 授权数据库
 ```
