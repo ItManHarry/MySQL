@@ -75,8 +75,14 @@
 - 命令方式在`cmd`下执行备份数据命令(此方式只是备份数据库里的表)
 
 ```
-  mysqldump -uroot -p [DatabaseName] > D:/backfile.sql
   
+  命令格式：
+  mysqldump -h[主机所在IP] -u[用户名] -p [要导出的数据库]>[导出的路径//[文件名].sql]
+  实例：
+  Remote:
+  > mysqldump -h 192.168.2.184 -u root -p dxq_oaxt > d:\dxq_oaxt.sql    
+  Local:
+  > mysqldump -uroot -p [DatabaseName] > D:/backfile.sql
 ```
 - MySQL下还原数据
 
